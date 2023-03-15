@@ -1,0 +1,104 @@
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: calc(18800vw / 1512) calc(46864vw / 1512);
+}
+
+.welcome_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: calc(3200vw / 1512);
+}
+
+.welcome_text {
+  padding: calc(1000vw / 1512);
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: calc(6400vw / 1512);
+  line-height: calc(8300vw / 1512);
+  text-align: center;
+  width: calc(55500vw / 1512);
+
+  color: #000000;
+}
+
+.welcome_get_in_touch {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: calc(1000vw / 1512);
+  gap: calc(1000vw / 1512);
+  border-width: calc(100vw / 1512) 0px;
+  border-style: solid;
+  /* border-color: #ffffff; */
+  cursor: pointer;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(1600vw / 1512);
+  line-height: calc(2100vw / 1512);
+  color: #99e6fc;
+}
+
+.welcome_experiance_outer_border {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  border: calc(300vw / 1512) solid #b3dafe;
+  border-radius: 0px calc(3200vw / 1512);
+}
+.welcome_experiance_inner_border {
+  position: relative;
+  padding: calc(1600vw / 1512);
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  gap: calc(4800vw / 1512);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+
+  outline: calc(300vw / 1512) solid #ffffff;
+  border-radius: calc(3200vw / 1512) 0;
+}
+.welcome_experiance_background {
+  display: flex;
+  justify-content: center;
+}
+/* calc(00vw/1512) */
+.welcome_experiance {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome_experiance_number {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: calc(3200vw / 1512);
+  line-height: 150%;
+
+  /* identical to box height, or 48px */
+  text-align: center;
+  padding: calc(1000vw / 1512);
+}
+
+.welcome_experiance_text {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(2400vw / 1512);
+  line-height: 150%;
+  padding: calc(1000vw / 1512);
+}

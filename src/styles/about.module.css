@@ -1,0 +1,74 @@
+.about_main {
+  padding-block: calc(8000vw / 1512);
+  display: flex;
+  justify-content: center;
+  gap: calc(7100vw / 1512);
+  align-items: center;
+}
+.about_picture {
+  width: calc(52800vw / 1512);
+}
+
+.about_text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: calc(1000vw / 1512);
+}
+.about_about_me {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(4800vw / 1512);
+  line-height: calc(6200vw / 1512);
+}
+
+.about_get_in_touch {
+  cursor: pointer;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: calc(1000vw / 1512);
+  gap: calc(800vw / 1512);
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(2400vw / 1512);
+  line-height: 150%;
+  text-align: center;
+  color: #b3dafe;
+
+  border-width: calc(100vw / 1512) 0px;
+  border-style: solid;
+  border-color: #b3dafe;
+}
+/* calc(00vw/1512) */
+.about_about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: calc(62000vw / 1512);
+  padding: calc(1000vw / 1512);
+}
+
+.about_about_text {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(2400vw / 1512);
+  line-height: 150%;
+}
+
+.about_see_more {
+  cursor: pointer;
+  padding: calc(800vw / 1512);
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(2000vw / 1512);
+  line-height: 150%;
+  text-align: center;
+
+  color: #b3dafe;
+}

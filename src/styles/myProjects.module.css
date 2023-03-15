@@ -1,0 +1,125 @@
+.my_projects {
+  box-sizing: border-box;
+  /* display: flex;
+  flex-wrap: wrap; */
+  position: relative;
+  padding-top: calc(8403vw / 1512);
+  gap: calc(11000vw / 1512);
+  row-gap: calc(2400vw / 1512);
+  /* justify-content: center; */
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+}
+
+.my_projects_title {
+  position: absolute;
+  left: calc(15242vw / 1512);
+  top: calc(8403vw / 1512);
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(4800vw / 1512);
+  line-height: calc(6200vw / 1512);
+}
+
+.my_projects_img_container {
+  cursor: pointer;
+  display: flex;
+  position: relative;
+}
+.my_projects_img {
+  width: calc(55000vw / 1512);
+}
+
+.my_projects_about {
+  box-sizing: border-box;
+  padding: calc(1200vw / 1512) calc(2300vw / 1512) calc(2300vw / 1512)
+    calc(3300vw / 1512);
+  max-width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  background: rgba(217, 217, 217, 0.24);
+  backdrop-filter: blur(calc(800vw / 1512));
+}
+
+.my_projects_about_title {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  /* flex-direction: row; */
+  justify-content: center;
+  align-items: center;
+  padding: calc(1000vw / 1512);
+  gap: calc(1000vw / 1512);
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(2400vw / 1512);
+  line-height: 150%;
+  border-bottom: calc(100vw / 1512) solid #000000;
+  margin-bottom: calc(1500vw / 1512);
+}
+
+.my_projects_about_text {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(1600vw / 1512);
+  line-height: 150%;
+}
+
+.my_projects_about_see_more {
+  cursor: pointer;
+  align-self: flex-end;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: calc(800vw / 1512);
+  gap: calc(800vw / 1512);
+  justify-self: flex-end;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(1600vw / 1512);
+  line-height: 150%;
+  border-bottom: calc(100vw / 1512) solid;
+}
+.my_projects_about_see_more_arrow {
+  height: calc(1265vw / 1512);
+  width: calc(722vw / 1512);
+}
+
+.projects_view_all {
+  /* position: absolute;
+  bottom: calc(9500vw / 1512);
+  right: calc(32500vw / 1512); */
+
+  box-sizing: border-box;
+  width: fit-content;
+  display: flex;
+  justify-self: center;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: calc(1000vw / 1512);
+  gap: calc(1000vw / 1512);
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(2400vw / 1512);
+  line-height: 150%;
+  color: #312fb4;
+  margin-block: calc(5100vw / 1512) calc(9500vw / 1512);
+  border-bottom: calc(100vw / 1512) solid #312fb4;
+  cursor: pointer;
+}
+
+/* calc(00vw/1512) */

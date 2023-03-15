@@ -1,0 +1,109 @@
+.services_main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 0 calc(8000vw / 1512);
+}
+
+.services_conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: calc(3200vw / 1512);
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: calc(800vw / 1512);
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(4800vw / 1512);
+  line-height: calc(6200vw / 1512);
+}
+
+.services_content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0;
+  gap: calc(3100vw / 1512);
+  position: relative;
+}
+
+.each_service {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: calc(6400vw / 1512) calc(800vw / 1512);
+  gap: calc(3200vw / 1512);
+
+  width: calc(27700vw / 1512);
+  height: calc(38800vw / 1512);
+  /* min-height: 100%; */
+
+  background: rgba(217, 217, 217, 0.24);
+  border: calc(100vw / 1512) solid #d9d9d9;
+  backdrop-filter: blur(calc(2000vw / 1512));
+}
+
+.service_logo {
+  width: calc(7200vw / 1512);
+  height: calc(7200vw / 1512);
+}
+.service_name {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: calc(1000vw / 1512);
+  gap: calc(1000vw / 1512);
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: calc(1600vw / 1512);
+  line-height: calc(2100vw / 1512);
+}
+.service_text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: calc(1000vw / 1512);
+  gap: calc(1000vw / 1512);
+  width: calc(17615vw / 1512);
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(1200vw / 1512);
+  line-height: 150%;
+  text-align: center;
+}
+
+.services_follow_me {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  gap: calc(1600vw / 1512);
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(2400vw / 1512);
+  line-height: calc(3100vw / 1512);
+
+  color: #312fb4;
+}
+
+.services_soc_net {
+  width: calc(1600vw / 1512);
+}
+
+/* calc(00vw/1512) */
