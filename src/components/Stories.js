@@ -5,7 +5,11 @@ export default function Stories(props) {
 
   return (
     <div className={styles.success_stories}>
-      <div className={styles.stories_title}>Success Stories</div>
+      <div className={styles.stories_title}>
+        <div>
+          <span style={{ color: "#1A74E5" }}>Success</span> Stories{" "}
+        </div>
+      </div>
       <div className={styles.stories}>
         {stories.map((story) => {
           return (

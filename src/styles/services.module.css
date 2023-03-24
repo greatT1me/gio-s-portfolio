@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: flex-start;
   padding: calc(4000vw / 1512) calc(8000vw / 1512);
-  margin-block: calc(2300vw / 1512) calc(3600vw / 1512);
+  /* margin-block: calc(2300vw / 1512) calc(3600vw / 1512); */
 }
 
 .services_conteiner {
