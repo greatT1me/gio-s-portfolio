@@ -27,14 +27,6 @@ export default function MyProjects(props) {
                 <div className={styles.my_projects_about_text}>
                   {project.text}
                 </div>
-                <div className={styles.my_projects_about_see_more}>
-                  See More{" "}
-                  <img
-                    src="/arrow_right.svg"
-                    alt="right arrow"
-                    className={styles.my_projects_about_see_more_arrow}
-                  />
-                </div>
               </div>
             </div>
           );
