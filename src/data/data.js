@@ -12,22 +12,30 @@ const data = {
     {
       logoRoute: "/services/service1.svg",
       name: "UI/UX Design",
-      text: "We offer comprehensive UI/UX design services that focus on creating digital interfaces that are visually appealing, easy to use, and provide a positive user experience.",
+      text: "I provide UI/UX design services to create visually appealing and user-friendly digital interfaces.",
     },
     {
       logoRoute: "/services/service2.svg",
       name: "Frontend development",
-      text: "specialize in creating user-facing portions of websites or applications using programming languages such as HTML, CSS, and JavaScript,",
+      // text: "I specialize in using HTML, CSS, and JavaScript to create user-friendly website and application interfaces.",
+      text: (
+        <div>
+          I specialize in using <span style={{ color: "#3930B6" }}>HTML</span> ,{" "}
+          <span style={{ color: "#3930B6" }}>CSS</span>, and{" "}
+          <span style={{ color: "#3930B6" }}>JavaScript</span> to create
+          user-friendly website and application interfaces.
+        </div>
+      ),
     },
     {
       logoRoute: "/services/service3.svg",
       name: "Icon Design",
-      text: "involve creating simple and visually appealing symbolic images that represent your brand, idea, or concept, ensuring that they are easily recognizable and memorable.",
+      text: "Creating visually compelling icons with a consistent style that effectively communicate ideas and concepts.",
     },
     {
       logoRoute: "/services/service4.svg",
       name: "Logo Design",
-      text: "Involve to create memorable and timeless logos that reflect a company's values and identity, using a strategic and creative approach that sets them apart from competitors.",
+      text: "Creating unique logos that reflect a company's identity and differentiate them from competitors.",
     },
   ],
   MyProjects: [
@@ -56,17 +64,14 @@ const data = {
     {
       name: "Nairi Najaryan",
       story: `"Of the many web designers I've worked with, Giorgi stands out as one of the most competent and skilled. His web design skills are unparalleled, and the designs he creates are revolutionary. Not only did I not need to lead him, but at the project's conclusion I was the one who had asked for clarification. 10 STARS! I'm hoping to have a productive partnership with you for many years to come. Thank you very much. ️`,
-      review: "⭐️⭐️⭐️⭐️⭐️",
     },
     {
       name: "Rindert Dalstra, Suderans",
       story: `"- Great communication - Great problem-solving skills - Would recommend GIorgi without any hesitation - Happy to hire again"`,
-      review: "⭐️⭐️⭐️⭐️⭐️",
     },
     {
       name: "Natia Tkeshelashvili",
       story: `"It was nice to work with Giorgi. He's so dedicated to working, always doing his job by deadlines. I would work with him again. Good luck Giorgi! "`,
-      review: "⭐️⭐️⭐️⭐️⭐️",
     },
   ],
   footerBarNav: {

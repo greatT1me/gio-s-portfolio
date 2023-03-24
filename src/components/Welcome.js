@@ -7,12 +7,12 @@ export default function Welcome(props) {
       <div className={styles.welcome}>
         <div className={styles.welcome_content}>
           <div className={styles.welcome_text}>
-            Welcome to my portfolio website!
+            Welcome to my <span style={{ color: "#1A74E5" }}>portfolio!</span>
           </div>
           <div
             className={styles.welcome_get_in_touch}
             onClick={() => handleClick("GetInTouch")}>
-            Get in Touch
+            Get In Touch
           </div>
         </div>
       </div>

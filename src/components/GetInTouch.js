@@ -4,7 +4,9 @@ export default function GetInTouch(props) {
   return (
     <div className={styles.contact}>
       <div className={styles.contact_content}>
-        <div className={styles.contact_header}>Get in Touch!</div>
+        <div className={styles.contact_header}>
+          Get in <span style={{ color: "#1A74E5" }}> Touch!</span>
+        </div>
         <div className={styles.contact_privacy}>
           {
             "We’ll never sell your information or share it with third-party marketing sevices"

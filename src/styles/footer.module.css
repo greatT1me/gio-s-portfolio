@@ -62,14 +62,14 @@
   justify-content: center;
   align-items: center;
   padding: 0;
-  gap: calc(1600vw / 1512);
+  gap: calc(800vw / 1512);
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 400;
   font-size: calc(2400vw / 1512);
   line-height: calc(3100vw / 1512);
 
-  color: #99e6fc;
+  color: #1a74e5;
 }
 .footer_main_logo {
   height: calc(5400vw / 1512);

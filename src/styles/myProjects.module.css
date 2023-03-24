@@ -3,9 +3,9 @@
   /* display: flex;
   flex-wrap: wrap; */
   position: relative;
-  padding-top: calc(8403vw / 1512);
+  padding-block: calc(8403vw / 1512) calc(24700vw / 1512);
   gap: calc(11000vw / 1512);
-  row-gap: calc(2400vw / 1512);
+  row-gap: calc(2800vw / 1512);
   /* justify-content: center; */
   display: grid;
   grid-template-columns: auto auto;
@@ -116,9 +116,9 @@
   font-weight: 400;
   font-size: calc(2400vw / 1512);
   line-height: 150%;
-  color: #312fb4;
-  margin-block: calc(5100vw / 1512) calc(9500vw / 1512);
-  border-bottom: calc(100vw / 1512) solid #312fb4;
+  color: #1a74e5;
+  /* margin-block: calc(5100vw / 1512) calc(9500vw / 1512); */
+  border-bottom: calc(100vw / 1512) solid;
   cursor: pointer;
 }
 

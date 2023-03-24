@@ -25,12 +25,10 @@ export default function Footer(props) {
           src="/footer/footer_linkedin.svg"
           alt="Linkedin"
           className={styles.footer_social_net}
-          style={{ width: " calc(2000vw / 1512)" }}
         />{" "}
         <img
           src="/footer/footer_be.svg"
           alt="Be"
-          style={{ width: " calc(2400vw / 1512)" }}
           className={styles.footer_social_net}
         />{" "}
       </div>

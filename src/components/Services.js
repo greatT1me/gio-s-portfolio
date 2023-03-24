@@ -11,11 +11,14 @@ export default function Services({ ...props }) {
           {Object.keys(services).map((service) => {
             return (
               <div className={styles.each_service}>
-                <img
-                  src={services[service].logoRoute}
-                  alt="logo"
-                  className={styles.service_logo}
-                />
+                <div className={styles.ervice_logo_box}>
+                  <img
+                    src={services[service].logoRoute}
+                    alt="logo"
+                    className={styles.service_logo}
+                  />
+                </div>
+
                 <div className={styles.service_name}>
                   {services[service].name}
                 </div>
@@ -31,12 +34,12 @@ export default function Services({ ...props }) {
           <img
             src="/services/linkedin.svg"
             alt="instagram"
-            style={{ width: " calc(1750vw / 1512)" }}
+            className={styles.services_soc_net}
           />{" "}
           <img
             src="/services/be.svg"
             alt="be"
-            style={{ width: " calc(2400vw / 1512)" }}
+            className={styles.services_soc_net}
           />
         </div>
       </div>

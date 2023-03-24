@@ -17,13 +17,13 @@ export default function About(props) {
             about my design services or discuss a potential project. Thank you
             for visiting my website, and I hope to hear from you soon!
           </div>
-          <div className={styles.about_see_more}>See more</div>
+          {/* <div className={styles.about_see_more}>See more</div> */}
         </div>
 
         <div
           className={styles.about_get_in_touch}
           onClick={() => handleClick("GetInTouch")}>
-          Get in Touch
+          Get In Touch
         </div>
       </div>
     </div>
