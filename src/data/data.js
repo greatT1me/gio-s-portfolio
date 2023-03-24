@@ -69,15 +69,30 @@ const data = {
     },
     {
       authorName: "Rindert Dalstra, Suderans",
-      story: `"- Great communication - Great problem-solving skills - Would recommend GIorgi without any hesitation - Happy to hire again"`,
+      story: (
+        <div>
+          <div>"- Great communication</div>
+          <div>- Great problem-solving skills </div>
+          <div>- Would recommend GIorgi without any hesitation </div>
+          <div>- Happy to hire again"</div>{" "}
+        </div>
+      ),
+
       authorJob: "",
-      website: "",
+      website: "Small Figma automation project",
     },
     {
       authorName: "Natia Tkeshelashvili",
       story: `"It was nice to work with Giorgi. He's so dedicated to working, always doing his job by deadlines. I would work with him again. Good luck Giorgi! "`,
       authorJob: "",
       website: "",
+    },
+    {
+      authorName: "Temur N.",
+      story:
+        "Giorgi was extremely helpful. he was polite and timely. it was a pleasure working with him. highly recommend",
+      authorJob: "Head Of Information Technology",
+      website: "wireframe design",
     },
   ],
   footerBarNav: {
