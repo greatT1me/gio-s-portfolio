@@ -5,30 +5,31 @@ export default function Stories(props) {
 
   return (
     <div className={styles.success_stories}>
-      <div className={styles.stories_title}>
-        <div>
-          <span style={{ color: "#1A74E5" }}>Success</span> Stories{" "}
-        </div>
-      </div>
-      <div className={styles.stories}>
-        {stories.map((story) => {
-          return (
-            <div className={styles.stories_each_story}>
-              <div className={styles.stories_name}>{story.name}</div>
-              <div className={styles.stories_story}>{story.story}</div>
-              <div className={styles.stories_review}></div>
-              {story.review}
-            </div>
-          );
-        })}
-      </div>
       <div className={styles.stories_arrow_box}>
         {" "}
         <img
           src="/review_arrow_left.svg"
           alt="arrow left"
           className={styles.stories_arrows}
-        />{" "}
+        />
+      </div>
+      <div className={styles.stories_content}>
+        <div className={styles.stories_title}>
+          <div>
+            Success <span style={{ color: "black" }}>Stories</span>{" "}
+          </div>
+        </div>
+        <div className={styles.stories}>{stories[0].story}</div>
+        {/*  */}
+        <div className={styles.stories_author}>
+          <div className={styles.author_info}>
+            <div className={styles.author_name}>{stories[0].authorName} </div>
+            <div className={styles.author_job}>{stories[0].authorJob}</div>
+          </div>
+          <div className={styles.author_website_name}>{stories[0].website}</div>
+        </div>
+      </div>{" "}
+      <div className={styles.stories_arrow_box}>
         <img
           src="/review_arrow_right.svg"
           alt="arrow left"

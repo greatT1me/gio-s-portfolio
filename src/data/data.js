@@ -62,16 +62,22 @@ const data = {
   ],
   successStories: [
     {
-      name: "Nairi Najaryan",
+      authorName: "Nairi Najaryan",
       story: `"Of the many web designers I've worked with, Giorgi stands out as one of the most competent and skilled. His web design skills are unparalleled, and the designs he creates are revolutionary. Not only did I not need to lead him, but at the project's conclusion I was the one who had asked for clarification. 10 STARS! I'm hoping to have a productive partnership with you for many years to come. Thank you very much. ️`,
+      authorJob: "Designer & Developer",
+      website: "Landing page design",
     },
     {
-      name: "Rindert Dalstra, Suderans",
+      authorName: "Rindert Dalstra, Suderans",
       story: `"- Great communication - Great problem-solving skills - Would recommend GIorgi without any hesitation - Happy to hire again"`,
+      authorJob: "",
+      website: "",
     },
     {
-      name: "Natia Tkeshelashvili",
+      authorName: "Natia Tkeshelashvili",
       story: `"It was nice to work with Giorgi. He's so dedicated to working, always doing his job by deadlines. I would work with him again. Good luck Giorgi! "`,
+      authorJob: "",
+      website: "",
     },
   ],
   footerBarNav: {
