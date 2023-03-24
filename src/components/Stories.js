@@ -18,7 +18,7 @@ export default function Stories(props) {
       let newIndex = storyIndex - 1;
       setStoryIndex(newIndex);
     } else {
-      setStoryIndex(Object.keys(stories).length);
+      setStoryIndex(Object.keys(stories).length - 1);
     }
   };
   useEffect(() => {
@@ -49,7 +49,7 @@ export default function Stories(props) {
         {/*  */}
         <div className={styles.stories_author}>
           <div className={styles.author_info}>
-            <div className={styles.author_name}>
+            <div className={styles.author_website_name}>
               {stories[storyIndex].authorName}{" "}
             </div>
             <div className={styles.author_job}>
