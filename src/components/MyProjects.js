@@ -1,5 +1,5 @@
 import styles from "@/styles/myProjects.module.css";
-import Link from "Next/Link";
+import Link from "next/link";
 
 export default function MyProjects(props) {
   const { projects } = props;

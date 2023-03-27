@@ -18,11 +18,9 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   const navRef = useRef({});
   const handleClick = (el) => {
-    console.log("navRef.current", navRef.current, el);
-    console.log("el", el);
     navRef.current[el].scrollIntoView({ behavior: "smooth" });
   };
-  console.log("navRef.current", navRef.current);
+
   useEffect(() => {
     const hash = window.location.hash;
     const targetId = hash.substring(1); // Remove the leading '#' character
@@ -31,7 +29,6 @@ export default function Home() {
       // targetDiv.scrollIntoView({ behavior: "smooth" });
       handleClick(targetId);
     }
-    console.log(targetId);
   }, []);
 
   return (
