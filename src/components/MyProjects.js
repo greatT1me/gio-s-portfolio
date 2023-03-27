@@ -1,4 +1,5 @@
 import styles from "@/styles/myProjects.module.css";
+import Link from "Next/Link";
 
 export default function MyProjects(props) {
   const { projects } = props;
@@ -35,7 +36,9 @@ export default function MyProjects(props) {
         }
       })}
       <div></div>
-      <div className={styles.projects_view_all}> Wiev All Projects</div>
+      <Link href="/Projects" className={styles.projects_view_all_link}>
+        <div className={styles.projects_view_all}> View All Projects</div>
+      </Link>
     </div>
   );
 }

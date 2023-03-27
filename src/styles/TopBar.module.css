@@ -58,7 +58,9 @@
   gap: calc(3200vw / 1512);
 }
 /* calc(00vw/1512) */
-
+.button:hover {
+  color: #316bff;
+}
 .button {
   /* display: flex; */
   /* flex-direction: row;

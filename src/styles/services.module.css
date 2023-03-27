@@ -47,9 +47,12 @@
   width: calc(26700vw / 1512);
   /* height: calc(35200vw / 1512); */
   /* min-height: 100%; */
+  transition: 0.05s ease-in-out;
 }
-
-.ervice_logo_box {
+.each_service:hover {
+  transform: scale(1.1);
+}
+.service_logo_box {
   box-sizing: border-box;
   display: flex;
   justify-content: center;

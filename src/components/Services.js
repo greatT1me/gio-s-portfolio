@@ -11,7 +11,7 @@ export default function Services({ ...props }) {
           {Object.keys(services).map((service) => {
             return (
               <div className={styles.each_service}>
-                <div className={styles.ervice_logo_box}>
+                <div className={styles.service_logo_box}>
                   <img
                     src={services[service].logoRoute}
                     alt="logo"

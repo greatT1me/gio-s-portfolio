@@ -28,13 +28,13 @@
   cursor: pointer;
   display: flex;
   position: relative;
+  width: fit-content;
 }
 .my_projects_img {
   width: calc(55000vw / 1512);
 }
 
 .my_projects_about {
-  /* visibility: hidden; */
   box-sizing: border-box;
   padding: calc(1200vw / 1512) calc(2300vw / 1512) calc(2300vw / 1512)
     calc(3300vw / 1512);
@@ -49,12 +49,14 @@
   transform: scaleY(0);
   backdrop-filter: blur(calc(800vw / 1512));
   transition: 0.1s ease-out;
+  color: rgba(0, 0, 0, 0);
 }
 
 .my_projects_img_container:hover .my_projects_about {
   opacity: 1;
   top: 50%;
   transform: scaleY(1);
+  color: rgba(0, 0, 0, 1);
 }
 .my_projects_about_title {
   position: relative;
@@ -106,12 +108,12 @@
   height: calc(1265vw / 1512);
   width: calc(722vw / 1512);
 }
-
+.projects_view_all_link {
+  display: flex;
+  justify-self: center;
+  text-decoration: none;
+}
 .projects_view_all {
-  /* position: absolute;
-  bottom: calc(9500vw / 1512);
-  right: calc(32500vw / 1512); */
-
   box-sizing: border-box;
   width: fit-content;
   display: flex;

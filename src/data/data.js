@@ -2,8 +2,8 @@ const data = {
   topBarNav: {
     Home: "Home",
     "About me": "About",
-    "My projects": "Projects",
     Services: "Services",
+    "My projects": "Projects",
     Testimonials: "Testimonials",
   },
   aboutMe:

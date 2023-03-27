@@ -18,7 +18,23 @@ export default function Welcome(props) {
       </div>
 
       <div className={styles.welcome_experiance_background}>
-        <div className={styles.welcome_experiance_outer_border}>
+        <div className={styles.welcome_experiance_outer_container}>
+          <img
+            src="/angle.svg"
+            alt="arrow left"
+            style={{ position: "absolute", top: "0px", left: "0px" }}
+          />
+          <img
+            src="/angle.svg"
+            alt="arrow left"
+            style={{
+              position: "absolute",
+              bottom: "0px",
+              right: "0px",
+              transform: "scale(-1, -1)",
+            }}
+          />
+          <div className={styles.welcome_experiance_outer_border}></div>
           <div className={styles.welcome_experiance_inner_border}>
             <div className={styles.welcome_experiance}>
               <div className={styles.welcome_experiance_number}>50+</div>

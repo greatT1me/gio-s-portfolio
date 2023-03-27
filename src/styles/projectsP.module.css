@@ -1,0 +1,80 @@
+.projects_page_main {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  gap: 64px;
+}
+.main_content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0px 135px;
+  gap: 32px;
+}
+.content_head {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.content_head_go_back {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 10px;
+  border-bottom: 1px solid #1a74e5;
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  color: #1a74e5;
+  cursor: pointer;
+}
+
+.content_head_title {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 62px;
+}
+
+.projects_list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 15.72px;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.projects_page_get_in_touch {
+  box-sizing: border-box;
+  display: flex;
+  width: fit-content;
+  flex-direction: row;
+  gap: 10px;
+  cursor: pointer;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  /* line-height: calc(2100vw / 1512); */
+  line-height: 150%;
+  /* identical to box height, or 36px */
+  text-align: center;
+  color: #ffffff;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 26px;
+  background: #316bff;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 8px;
+  margin-inline: auto;
+}

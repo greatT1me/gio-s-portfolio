@@ -133,15 +133,33 @@
   width: 15px;
 }
 .stories_arrow_box:hover .next_story {
-  position: relative;
+  animation: arrow-right-shake 0.2s ease-in-out;
+  /* position: relative;
   left: 3px;
   width: 16px;
-  height: 16px;
+  height: 16px; */
 }
 .stories_arrow_box:hover .prev_story {
-  position: relative;
+  animation: arrow-left-shake 0.2s ease-in-out;
+  /* position: relative;
   right: 3px;
   width: 16px;
-  height: 16px;
+  height: 16px; */
+}
+@keyframes arrow-left-shake {
+  50% {
+    transform: translate(-30%);
+  }
+  100% {
+    transform: translate(0%);
+  }
+}
+@keyframes arrow-right-shake {
+  50% {
+    transform: translate(30%);
+  }
+  100% {
+    transform: translate(0%);
+  }
 }
 /* calc(00vw/1512) */

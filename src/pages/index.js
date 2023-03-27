@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
@@ -23,6 +23,17 @@ export default function Home() {
     navRef.current[el].scrollIntoView({ behavior: "smooth" });
   };
   console.log("navRef.current", navRef.current);
+  useEffect(() => {
+    const hash = window.location.hash;
+    const targetId = hash.substring(1); // Remove the leading '#' character
+    const targetDiv = document.getElementById(targetId);
+    if (targetId) {
+      // targetDiv.scrollIntoView({ behavior: "smooth" });
+      handleClick(targetId);
+    }
+    console.log(targetId);
+  }, []);
+
   return (
     <>
       <Head>
