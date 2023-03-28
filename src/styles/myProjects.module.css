@@ -25,6 +25,7 @@
 }
 
 .my_projects_img_container {
+  border-radius: 4px;
   cursor: pointer;
   display: flex;
   position: relative;
@@ -32,9 +33,11 @@
 }
 .my_projects_img {
   width: calc(55000vw / 1512);
+  border-radius: 4px;
 }
 
 .my_projects_about {
+  border-radius: 4px;
   box-sizing: border-box;
   padding: calc(1200vw / 1512) calc(2300vw / 1512) calc(2300vw / 1512)
     calc(3300vw / 1512);

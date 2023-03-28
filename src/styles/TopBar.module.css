@@ -2,6 +2,7 @@
   /* background-color: #ffffff; */
   display: flex;
   /* position: fixed; */
+  /* height: 101px; */
 }
 
 .top_bar {
@@ -49,6 +50,8 @@
 }
 
 .nav_btn {
+  position: fixed;
+  z-index: 3;
   /* box-sizing: border-box; */
   display: flex;
   flex-direction: row;
@@ -56,6 +59,8 @@
   justify-content: space-between;
   padding: 0px;
   gap: calc(3200vw / 1512);
+  left: 50%;
+  transform: translate(-50%);
 }
 /* calc(00vw/1512) */
 .button:hover {

@@ -5,6 +5,36 @@ export default function Welcome(props) {
   return (
     <div className={styles.welcome_home}>
       <div className={styles.welcome}>
+        {/* <img
+          src="\welcome\icons_adobe-photoshop.svg"
+          alt="adobe photoshop icon"
+          style={{
+            position: "absolute",
+            top: "50%",
+            left: "100%",
+            transform: "translateX(-100%)",
+          }}
+        />
+        <img
+          src="\welcome\icons_figma.svg"
+          alt="figma icon"
+          style={{ position: "absolute", top: "0px", left: "0px" }}
+        />
+        <img
+          src="\welcome\iconss_adobe-illustrator.svg"
+          alt="adobe illustrator icon"
+          style={{
+            position: "absolute",
+            top: "0",
+            left: "100%",
+            transform: "translateX(-100%)",
+          }}
+        />
+        <img
+          src="\welcome\skill-icons_webflow.svg"
+          alt="webflow"
+          style={{ position: "absolute", top: "50%", left: "0" }}
+        /> */}
         <div className={styles.welcome_content}>
           <div className={styles.welcome_text}>
             Welcome to my <span style={{ color: "#1A74E5" }}>portfolio!</span>
@@ -20,12 +50,12 @@ export default function Welcome(props) {
       <div className={styles.welcome_experiance_background}>
         <div className={styles.welcome_experiance_outer_container}>
           <img
-            src="/angle.svg"
+            src="/welcome/angle.svg"
             alt="arrow left"
             style={{ position: "absolute", top: "0px", left: "0px" }}
           />
           <img
-            src="/angle.svg"
+            src="/welcome/angle.svg"
             alt="arrow left"
             style={{
               position: "absolute",

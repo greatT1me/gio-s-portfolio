@@ -45,12 +45,16 @@
 }
 
 .projects_list {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 0 15.72px;
+  /* width: 100%; */
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  padding: 0 15.72px;
+
   gap: 28px;
+  /* place-items: ;/ */
 }
 
 .projects_page_get_in_touch {

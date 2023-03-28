@@ -6,8 +6,8 @@ const BUTTONS = ["Home", "About me", "My projects", "Services", "Testimonials"];
 export default function TopBar(props) {
   const { topBarNav, handleClick } = props;
   return (
-    <div className={styles.white_background}>
-      <div className={styles.top_bar}>
+    <div className={styles.white_background} tabIndex={12}>
+      <div className={styles.top_bar} tabIndex={0}>
         <img src="/main_logo.svg" alt="main logo" className={styles.logo} />
         <div className={styles.nav_btn}>
           {Object.keys(topBarNav).map((text) => {

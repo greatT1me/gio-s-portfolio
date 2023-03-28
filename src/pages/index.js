@@ -29,6 +29,7 @@ export default function Home() {
       // targetDiv.scrollIntoView({ behavior: "smooth" });
       handleClick(targetId);
     }
+    history.replaceState(null, null, window.location.pathname);
   }, []);
 
   return (
@@ -50,9 +51,7 @@ export default function Home() {
         <div ref={(el) => (navRef.current.Home = el)}>
           <Welcome handleClick={handleClick} />
         </div>
-        <div ref={(el) => (navRef.current.About = el)}>
-          <About handleClick={handleClick} />
-        </div>
+
         <div ref={(el) => (navRef.current.Services = el)}></div>
         <Services services={data.services} />
         <div ref={(el) => (navRef.current.Projects = el)}>
@@ -60,6 +59,9 @@ export default function Home() {
         </div>
         <div ref={(el) => (navRef.current.Testimonials = el)}>
           <Stories stories={data.successStories} />
+        </div>
+        <div ref={(el) => (navRef.current.About = el)}>
+          <About handleClick={handleClick} />
         </div>
         <div ref={(el) => (navRef.current.GetInTouch = el)}>
           <GetInTouch />
