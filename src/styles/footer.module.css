@@ -1,0 +1,104 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 32px 112px 16px;
+  gap: 10px;
+  background: rgba(25, 116, 230, 0.2);
+}
+.footer_content {
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 0px;
+  /* gap: 170px; */
+}
+.footer_logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0;
+  gap: calc(1433vw / 1512);
+}
+.footer_tdesign {
+  position: relative;
+  /* width: calc(14700vw / 1512); */
+  font-family: "Sacramento";
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(3000vw / 1512);
+  line-height: 0;
+  color: #4c2a72;
+  margin-bottom: calc(1000vw / 1512);
+}
+.footer_navigation {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0;
+  gap: 64px;
+  height: 27px;
+}
+.footer_navigation_btn {
+  display: flex;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}
+.footer_navigation_btn:hover {
+  cursor: pointer;
+  font-family: "Poppins";
+  /* font-style: normal; */
+  font-weight: 600;
+  /* font-size: calc(1800vw / 1512); */
+  line-height: 27px;
+}
+.footer_follow_me {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  gap: 8px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+
+  color: #1a74e5;
+}
+.footer_main_logo {
+  height: 54px;
+}
+.footer_social_net {
+  height: 24px;
+  color: #99e6fc;
+  cursor: pointer;
+}
+.footer_copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #434343;
+  border-top: 1px solid #434343;
+  padding-block: 42px;
+  width: 100%;
+}
+
+/* calc(00vw/1512) */
