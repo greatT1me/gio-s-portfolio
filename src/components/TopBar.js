@@ -4,7 +4,7 @@ import Image from "next/image";
 const BUTTONS = ["Home", "About me", "My projects", "Services", "Testimonials"];
 
 export default function TopBar(props) {
-  const { topBarNav, handleClick } = props;
+  const { topBarNav, handleClick, active } = props;
   return (
     <div className={styles.white_background} tabIndex={12}>
       <div className={styles.top_bar} tabIndex={0}>
@@ -15,7 +15,8 @@ export default function TopBar(props) {
               <div
                 key={"top bar " + text}
                 className={styles.button}
-                onClick={() => handleClick(topBarNav[text])}>
+                onClick={() => handleClick(topBarNav[text])}
+                style={active == topBarNav[text] ? { color: "#316bff" } : null}>
                 {text}
               </div>
             );

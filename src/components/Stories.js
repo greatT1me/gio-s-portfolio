@@ -25,7 +25,6 @@ export default function Stories(props) {
     const interval = setInterval(() => {
       nextStory();
     }, 8000);
-    console.log("done");
     return () => clearInterval(interval);
   }, [storyIndex]);
 

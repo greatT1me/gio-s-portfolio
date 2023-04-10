@@ -1,10 +1,10 @@
 const data = {
   topBarNav: {
     Home: "Home",
-    "About me": "About",
     Services: "Services",
     "My projects": "Projects",
     Testimonials: "Testimonials",
+    "About me": "About",
   },
   aboutMe:
     "Whether you're a start-up founder, a product manager, or a fellow designer, I'm always open to new design challenges and collaborations. Feel free to explore my portfolio and get in touch with me through the contact section if you'd like to learn more about my design services or discuss a potential project. Thank you for visiting my website, and I hope to hear from you soon!",

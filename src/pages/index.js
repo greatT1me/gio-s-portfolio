@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
@@ -17,19 +17,45 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const navRef = useRef({});
+
+  const heightRef = useRef(null);
   const handleClick = (el) => {
     navRef.current[el].scrollIntoView({ behavior: "smooth" });
   };
+  const [active, setActive] = useState([]);
 
+  let vHeight;
   useEffect(() => {
     const hash = window.location.hash;
+    vHeight = window.innerHeight;
     const targetId = hash.substring(1); // Remove the leading '#' character
-    const targetDiv = document.getElementById(targetId);
+
     if (targetId) {
       // targetDiv.scrollIntoView({ behavior: "smooth" });
       handleClick(targetId);
     }
     history.replaceState(null, null, window.location.pathname);
+  }, []);
+
+  const handleScroll = () => {
+    let foundActive = true;
+    Object.values(navRef.current)
+      .reverse()
+      .forEach((box, i) => {
+        const { y } = box.getClientRects()[0];
+        if (y < vHeight / 2 && foundActive) {
+          foundActive = false;
+          setActive(Object.keys(navRef.current).reverse()[i]);
+        }
+      });
+  };
+  useEffect(() => {
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      console.log("cleaned");
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   return (
@@ -46,8 +72,14 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-      <main className={styles.main}>
-        <TopBar handleClick={handleClick} topBarNav={data.topBarNav} />
+
+      <main className={styles.main} style={{ position: "relative" }}>
+        {/* <div style={{position:"absolute", height:"100vh", width:"100vw"}} ref={heightRef}></div> */}
+        <TopBar
+          handleClick={handleClick}
+          topBarNav={data.topBarNav}
+          active={active}
+        />
         <div ref={(el) => (navRef.current.Home = el)}>
           <Welcome handleClick={handleClick} />
         </div>
